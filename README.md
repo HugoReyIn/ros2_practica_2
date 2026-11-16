@@ -28,10 +28,10 @@ lab.bat iniciar         # Windows
 
 | Responsable | Tarea | Subtareas | Estado |
 |---|---|---|---|
-| **Hugo** | **1. Publicador de imágenes** | Crear el paquete (`package.xml`, `setup.py`, entry points) · parámetros de `usb_cam` en `config/` · launch file · comprobar con `rqt_graph` y `ros2 topic hz` | [] |
-| **Hugo** | **2. Suscriptor e ingesta** | Nodo `ImageCollector` · suscriptor al topic de imagen · filtro para que las 10 imágenes sean distintas (diferencia entre fotogramas / MSE con umbral) · guardado en disco | `[] |
-| **Xabier** | **3. Calibración** | Calibrar con `cameracalibrator` y el tablero · guardar el `.yaml` en `config/` · documentar el procedimiento | [] |
-| **Xabier** | **4. Aplicar la calibración** | Nodo `CalibrationApplier` · cargar los parámetros del `.yaml` · convertir `Image` → OpenCV con `cv_bridge` · aplicar `cv2.undistort` y publicar o mostrar la imagen corregida | [] |
+| **Hugo** | **1. Publicador de imágenes** | Crear el paquete (`package.xml`, `setup.py`, entry points) · parámetros de `usb_cam` en `config/` · launch file · comprobar con `rqt_graph` y `ros2 topic hz` | [ ] |
+| **Hugo** | **2. Suscriptor e ingesta** | Nodo `ImageCollector` · suscriptor al topic de imagen · filtro para que las 10 imágenes sean distintas (diferencia entre fotogramas / MSE con umbral) · guardado en disco | `[ ] |
+| **Xabier** | **3. Calibración** | Calibrar con `cameracalibrator` y el tablero · guardar el `.yaml` en `config/` · documentar el procedimiento | [ ] |
+| **Xabier** | **4. Aplicar la calibración** | Nodo `CalibrationApplier` · cargar los parámetros del `.yaml` · convertir `Image` → OpenCV con `cv_bridge` · aplicar `cv2.undistort` y publicar o mostrar la imagen corregida | [ ] |
 
 **Orden recomendado:** Hugo hace primero la tarea 1, porque bloquea al resto. Mientras tanto, Xabier puede calibrar lanzando `usb_cam` a mano (`ros2 run usb_cam usb_cam_node_exe`). Después cada uno sigue con su tarea difícil en paralelo.
 
