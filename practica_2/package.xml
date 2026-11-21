@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>practica_2</name>
+  <version>1.0.0</version>
+  <description>Ingesta, calibración y procesamiento de imágenes con ROS 2. Práctica 2</description>
+  <maintainer email="ignacio@todo.todo">ignacio</maintainer>
+  <license>TODO</license>
+
+  <!-- Base de los nodos en Python -->
+  <exec_depend>rclpy</exec_depend>
+
+  <!-- Mensaje Image que publica usb_cam -->
+  <exec_depend>sensor_msgs</exec_depend>
+
+    <!-- Conversión obligatoria de Image de ROS 2 a imagen de OpenCV -->
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+
+  <!-- Publicador de la cámara y visor de imágenes que arranca el launch -->
+  <exec_depend>usb_cam</exec_depend>
+  <exec_depend>rqt_image_view</exec_depend>
+
+  <!-- Launch files -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <!-- Paquete Python: se instala con setup.py -->
+    <build_type>ament_python</build_type>
+  </export>
+</package>
