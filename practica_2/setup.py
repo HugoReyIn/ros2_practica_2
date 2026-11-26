@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'recolector_imagenes = ros2_practica_2.recolector_imagenes:main',
+            'aplicador_calibracion = practica_2.aplicador_calibracion:main',
         ],
     },
 )
