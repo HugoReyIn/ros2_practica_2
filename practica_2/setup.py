@@ -25,7 +25,7 @@ setup(
     license='Apache-2.0',
     entry_points={
         'console_scripts': [
-            'recolector_imagenes = ros2_practica_2.recolector_imagenes:main',
+            'recolector_imagenes = practica_2.recolector_imagenes:main',
             'aplicador_calibracion = practica_2.aplicador_calibracion:main',
         ],
     },
