@@ -13,13 +13,19 @@
   <!-- Mensaje Image que publica usb_cam -->
   <exec_depend>sensor_msgs</exec_depend>
 
-    <!-- Conversión obligatoria de Image de ROS 2 a imagen de OpenCV -->
+  <!-- Conversión obligatoria de Image de ROS 2 a imagen de OpenCV -->
   <exec_depend>cv_bridge</exec_depend>
   <exec_depend>python3-opencv</exec_depend>
 
   <!-- Publicador de la cámara y visor de imágenes que arranca el launch -->
   <exec_depend>usb_cam</exec_depend>
   <exec_depend>rqt_image_view</exec_depend>
+
+  <!-- Lectura del yaml de calibración -->
+  <exec_depend>python3-yaml</exec_depend>
+  
+  <!-- Calibración de la cámara -->
+  <exec_depend>camera_calibration</exec_depend>
 
   <!-- Launch files -->
   <exec_depend>launch</exec_depend>
