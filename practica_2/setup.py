@@ -19,8 +19,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='ignacio',
-    maintainer_email='ignacio@todo.todo',
+    maintainer='Hugo Rey, Xabier Urrutia',
+    maintainer_email='hugo.rey@opendeusto.es, xabier.urrutia@opendeusto.es',
     description='Ingesta, calibración y procesamiento de imágenes con ROS 2. Práctica 2',
     license='Apache-2.0',
     entry_points={
