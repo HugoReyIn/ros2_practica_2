@@ -3,6 +3,7 @@
 <package format="3">
   <name>practica_2</name>
   <version>1.0.0</version>
+  <description>Ingesta, calibración y procesamiento de imágenes con ROS 2. Práctica 2</description>
   <maintainer email="hugo.rey@opendeusto.es">Hugo Rey</maintainer>
   <maintainer email="xabier.urrutia@opendeusto.es">Xabier Urrutia</maintainer>
   <license>Apache-2.0</license>
